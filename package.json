@@ -1,0 +1,26 @@
+{
+  "name": "argenthian-landing",
+  "version": "1.0.0",
+  "description": "landing page for argenthian online game",
+  "main": "app.js",
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp && gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "argenthian-landing"
+  },
+  "author": "@mauroef",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
