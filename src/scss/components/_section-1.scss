@@ -1,0 +1,9 @@
+.section-1 {
+  height: 75vh;
+  align-items: center;
+  background: linear-gradient(to right, #000000, #434343);
+
+  &__title {
+    color: #fff;
+  }
+}
