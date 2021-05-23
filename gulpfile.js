@@ -21,7 +21,7 @@ var paths = {
     dest: './build/images',
   },
   stylesScss: {
-    src: './src/scss/*.scss',
+    src: './src/scss/**/*.scss',
     dest: './src/css',
   },
   stylesCss: {
