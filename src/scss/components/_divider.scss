@@ -2,8 +2,9 @@
   height: 55px;
   margin: -18px -12px;
   position: relative;
-  z-index: 1; }
-  .divider:before {
+  z-index: 1;
+
+  &:before {
     left: 0;
     margin-right: 82px;
     right: 50%;
@@ -11,8 +12,10 @@
     content: '';
     height: 55px;
     position: absolute;
-    top: 0; }
-  .divider:after {
+    top: 0;
+  }
+
+  &:after {
     left: 50%;
     margin-left: 82px;
     right: 0;
@@ -20,8 +23,10 @@
     content: '';
     height: 55px;
     position: absolute;
-    top: 0; }
-  .divider__rule {
+    top: 0;
+  }
+
+  &__rule {
     background: url(../images/divider-sprite.png) repeat-x 50% 100%;
     border: 0;
     left: 50%;
@@ -30,11 +35,6 @@
     top: 5px;
     width: 164px;
     height: 55px !important;
-    opacity: 1 !important; }
-
-.main {
-  margin-top: 56px; }
-
-.footer__year {
-  font-size: 2em;
-  text-align: center; }
+    opacity: 1 !important;
+  }
+}
