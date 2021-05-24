@@ -1,3 +1,32 @@
+h2,
+h3 {
+  text-align: center;
+  text-transform: uppercase; }
+
+h2.title {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  color: #ecd19a;
+  text-shadow: 0px 0px 6px #000000; }
+
+h3 {
+  color: #ad835a;
+  text-shadow: 0px 0px 4px #000000; }
+  h3.subtitle {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.5s; }
+
+p.description {
+  margin: 1rem auto 0 auto;
+  width: 70%;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #71675b;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6rem; }
+
 .divider {
   height: 55px;
   margin: -18px -12px;
@@ -32,6 +61,11 @@
     height: 55px !important;
     opacity: 1 !important; }
 
+.separator {
+  background: url(../images/separator.png) 50% 100% no-repeat;
+  position: relative;
+  height: 70px; }
+
 .main {
   margin-top: 56px; }
 
@@ -41,6 +75,30 @@
   background: linear-gradient(to right, #000000, #434343); }
   .section-1__title {
     color: #fff; }
+
+.section-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)), url(../images/dark-wall.png); }
+  .section-2__item {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer; }
+  .section-2__image {
+    width: 100%;
+    border: 1px solid;
+    opacity: 0.5;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 25px 0px #000000; }
+  .section-2__description {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #71675b;
+    font-size: 0.85em;
+    text-align: left;
+    transition: all 0.5s;
+    font-weight: 400;
+    line-height: 1.4rem; }
+  .section-2 div:last-child {
+    max-width: 970px;
+    margin: 0 auto; }
 
 .footer__year {
   font-size: 2em;
