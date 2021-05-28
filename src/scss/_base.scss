@@ -24,6 +24,11 @@ h3 {
   }
 }
 
+section > .container {
+  max-width: $tablet-size;
+  margin: 0 auto;
+}
+
 p.description {
   margin: 1rem auto 0 auto;
   width: 70%;
