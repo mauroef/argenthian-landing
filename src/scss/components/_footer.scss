@@ -1,6 +1,52 @@
 .footer {
-  &__year {
-    font-size: 2em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
+    url(../images/dark-leather.png);
+  max-width: 100%;
+  padding: 4rem 2rem 2rem;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding-right: 1rem;
+    }
+  }
+
+  a {
+    transition: all 0.33s;
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:hover {
+      text-shadow: 0 0 15px $footer-link-hover-1-color,
+        0px -5px 20px $footer-link-hover-2-color,
+        0 5px 20px $footer-link-hover-3-color;
+    }
+  }
+
+  &__nav {
+    text-align: left;
+  }
+
+  &__social {
+    text-align: right;
+
+    a {
+      padding: 0.5rem;
+    }
+
+    span {
+      font-size: $font-large;
+    }
+  }
+
+  &__copyright {
+    font-size: $font-extra-large;
     text-align: center;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.2rem;
+    color: $footer-text-color;
+    margin-top: 1.75rem;
   }
 }
