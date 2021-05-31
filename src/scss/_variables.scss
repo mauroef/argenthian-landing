@@ -5,12 +5,22 @@ $default-text-color: #71675b;
 $primary-text-color: #ecd19a;
 $secondary-text-color: #ad835a;
 $accent-text-color: #f3aa55;
-$border-color: #752b1a;
+$red-color: #752b1a;
+$gradient-1-color: #b93a27;
+$gradient-2-color: #9e1e0b;
+$input-bg-color: #29221c;
+$input-border-color: #62351f;
+$input-border-top-color: #734a32;
 
-// sizes
+// responsive
 $mobile-size: 576px;
 $tablet-size: 768px;
 $desktop-size: 1200px;
+
+// font
+$font-normal: 1em;
+$font-small: 0.9em;
+$font-large: 1.5em;
 
 // variable width
 $container-width: 970px;

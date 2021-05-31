@@ -211,6 +211,62 @@ p.description {
     text-transform: uppercase;
     text-align: center; }
 
+.section-6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)), url(../images/dark-wall.png); }
+  .section-6 .form {
+    margin: 2rem 0 4rem; }
+    .section-6 .form__label {
+      color: #752b1a; }
+    .section-6 .form__input, .section-6 .form__select {
+      border-radius: 0px;
+      width: 100%;
+      padding: 0.25rem;
+      list-style: none;
+      font-size: 0.9em;
+      text-align: left;
+      box-shadow: 5px 0px 35px 5px rgba(0, 0, 0, 0.54);
+      background-clip: padding-box;
+      margin: 0;
+      background-color: #29221c;
+      border: 1px solid #62351f;
+      border-top-color: #734a32;
+      color: #ecd19a; }
+    .section-6 .form__option {
+      background: #29221c;
+      color: #ecd19a; }
+    .section-6 .form__textarea {
+      border-radius: 0px;
+      padding: 0.25rem;
+      list-style: none;
+      font-size: 0.9em;
+      text-align: left;
+      box-shadow: 5px 0px 35px 5px rgba(0, 0, 0, 0.54);
+      background-clip: padding-box;
+      margin: 0;
+      background-color: #29221c;
+      border: 1px solid #62351f;
+      border-top-color: #734a32;
+      color: #ecd19a;
+      min-height: 7rem;
+      width: 100%; }
+      .section-6 .form__textarea:focus-visible {
+        border-color: red;
+        border-radius: 0px;
+        border: 1px solid #62351f;
+        border-top-color: #734a32; }
+    .section-6 .form__button {
+      box-shadow: 5px 0px 35px 5px rgba(0, 0, 0, 0.54);
+      border-radius: 0px;
+      font-weight: 400;
+      text-shadow: 0 0 6px #000;
+      text-transform: uppercase;
+      color: #f3aa55;
+      font-size: 1.5em;
+      padding: 12px 0;
+      width: 100%;
+      border: 1px solid #b93a27;
+      background: linear-gradient(#b93a27, #9e1e0b); }
+
 .footer__year {
   font-size: 2em;
   text-align: center; }

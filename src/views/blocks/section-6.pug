@@ -1,0 +1,50 @@
+.container
+  .row
+    h2.title Lorem ipsum dolor sit amet
+    p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  .row
+    .col-md-4.offset-md-4
+      form(action="#", method="post", class="form", autocomplete="off")
+        //- name
+        .row.g-3.mb-3.justify-content-center
+          .col-md-4.col-sm-2
+            label(for="name", class="col-form-label form__label") Name
+          .col-md-8
+            input(id="name", type="text", required="isRequired", class="form-control form__input" )
+        //- email
+        .row.g-3.mb-3.justify-content-center
+          .col-md-4.col-sm-2
+            label(for="email", class="col-form-label form__label") Email
+          .col-md-8
+            input(id="email", type="email", required="isRequired", class="form-control form__input" )
+        //- reason
+        .row.g-3.mb-3.justify-content-center
+          .col-md-4.col-sm-2
+            label(for="reason", class="col-form-label form__label") Reason
+          .col-md-8
+            select(id="reason" class="form-select form__select")
+              option(value="Submit Bug", class="form__option") Submit Bug 
+              option(value="Testimonial", class="form__option") Testimonial 
+              option(value="Other", class="form__option") Other
+        //- you found us
+        .row.g-3.mb-3.justify-content-center
+          .col-md-5.col-sm-2
+            label(for="found-us", class="col-form-label form__label") You found us
+          .col-md-7
+            select(id="found-us" class="form-select form__select")
+              option(value="Google", class="form__option") Google
+              option(value="Friend", class="form__option") Friend 
+              option(value="Advertisement", class="form__option") Advertisement
+              option(value="Other", class="form__option") Other
+        //- message
+        .row.g-3.mb-3.justify-content-center
+          .col-md-4.col-sm-2
+            label(for="found-us", class="col-form-label form__label") Message
+          .col-md-8
+            textarea(placeholder="Your message...", class="form__textarea")
+        //- button
+        .row.g-3.mb-3.justify-content-center
+          .col-md-8.offset-md-4
+            button(type="submit", class="form__button") Submit
+
+

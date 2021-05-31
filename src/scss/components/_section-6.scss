@@ -1,0 +1,71 @@
+.section-6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
+    url(../images/dark-wall.png);
+
+  .form {
+    margin: 2rem 0 4rem;
+    &__label {
+      color: $red-color;
+    }
+
+    &__input,
+    &__select {
+      border-radius: 0px;
+      width: 100%;
+      padding: 0.25rem;
+      list-style: none;
+      font-size: $font-small;
+      text-align: left;
+      box-shadow: 5px 0px 35px 5px rgba(0, 0, 0, 0.54);
+      background-clip: padding-box;
+      margin: 0;
+      background-color: $input-bg-color;
+      border: 1px solid $input-border-color;
+      border-top-color: $input-border-top-color;
+      color: $primary-text-color;
+    }
+
+    &__option {
+      background: $input-bg-color;
+      color: $primary-text-color;
+    }
+
+    &__textarea {
+      border-radius: 0px;
+      padding: 0.25rem;
+      list-style: none;
+      font-size: $font-small;
+      text-align: left;
+      box-shadow: 5px 0px 35px 5px rgba(0, 0, 0, 0.54);
+      background-clip: padding-box;
+      margin: 0;
+      background-color: $input-bg-color;
+      border: 1px solid $input-border-color;
+      border-top-color: $input-border-top-color;
+      color: $primary-text-color;
+      min-height: 7rem;
+      width: 100%;
+
+      &:focus-visible {
+        border-color: red;
+        border-radius: 0px;
+        border: 1px solid $input-border-color;
+        border-top-color: $input-border-top-color;
+      }
+    }
+
+    &__button {
+      box-shadow: 5px 0px 35px 5px rgba(0, 0, 0, 0.54);
+      border-radius: 0px;
+      font-weight: 400;
+      text-shadow: 0 0 6px #000;
+      text-transform: uppercase;
+      color: $accent-text-color;
+      font-size: $font-large;
+      padding: 12px 0;
+      width: 100%;
+      border: 1px solid #b93a27;
+      background: linear-gradient($gradient-1-color, $gradient-2-color);
+    }
+  }
+}
