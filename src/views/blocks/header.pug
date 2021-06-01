@@ -1,16 +1,19 @@
 block navbar 
-  nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
+  nav.navbar.fixed-top.navbar-expand-lg.navbar-dark
     .container-fluid
       a.navbar-brand(href='#') Argenthian
       button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
         span.navbar-toggler-icon
-      #navbarNav.collapse.navbar-collapse
+      #navbarNav.collapse.navbar-collapse.justify-content-between
         ul.navbar-nav
           li.nav-item
-            a.nav-link.active(aria-current='page' href='#') Home
+            a.nav-link.navbar__link(aria-current='page' href='#heroes') Heroes
           li.nav-item
-            a.nav-link(href='#') Features
+            a.nav-link.navbar__link(href='#gallery') Gallery
           li.nav-item
-            a.nav-link(href='#') Pricing
+            a.nav-link.navbar__link(href='#download') Store
           li.nav-item
-            a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+            a.nav-link.navbar__link(href='#contact') Contact
+        .justify-content-end
+          button(type="button", class="btn btn-outline-warning mx-1") Login
+          button(type="button", class="btn btn-outline-danger") Sign-up

@@ -70,8 +70,22 @@ p.description {
   position: relative;
   height: 70px; }
 
-.main {
-  margin-top: 56px; }
+.navbar {
+  background-color: rgba(34, 34, 34, 0.95);
+  box-shadow: 0 2px 10px black;
+  border-color: #3f2f29; }
+  .navbar .navbar-brand {
+    color: #c4ae78; }
+    .navbar .navbar-brand:hover {
+      text-shadow: 0 0 15px #99774c, 0px -5px 20px #a17e51, 0 5px 20px #96744a; }
+  .navbar ul li.nav-item:hover {
+    text-shadow: 0 0 15px #99774c, 0px -5px 20px #a17e51, 0 5px 20px #96744a; }
+  .navbar ul li.nav-item a.navbar__link {
+    color: #c4ae78;
+    text-decoration: none; }
+    .navbar ul li.nav-item a.navbar__link:hover, .navbar ul li.nav-item a.navbar__link:focus {
+      color: #fff;
+      background-color: transparent; }
 
 .section-1 {
   height: 75vh;
@@ -280,8 +294,10 @@ p.description {
     transition: all 0.33s;
     color: #c4ae78;
     text-decoration: none; }
-    .footer a:hover {
-      text-shadow: 0 0 15px #99774c, 0px -5px 20px #a17e51, 0 5px 20px #96744a; }
+    .footer a:hover, .footer a:focus {
+      text-shadow: 0 0 15px #99774c, 0px -5px 20px #a17e51, 0 5px 20px #96744a;
+      color: #fff;
+      background-color: transparent; }
   .footer__nav {
     text-align: left; }
   .footer__social {
