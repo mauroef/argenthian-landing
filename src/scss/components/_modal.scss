@@ -1,0 +1,104 @@
+.modal {
+  &__border {
+    position: absolute;
+    z-index: 100;
+
+    &--top {
+      background: url(../images/modal-border-frame-sprite.png) 0 0 repeat-x;
+      height: 8px;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    &--right {
+      background: url(../images/modal-border-sprite.png) -69px 0 repeat-y;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      width: 11px;
+    }
+    &--bottom {
+      background: url(../images/modal-border-frame-sprite.png) 0 -8px repeat-x;
+      bottom: 0;
+      height: 8px;
+      left: 0;
+      right: 0;
+    }
+    &--left {
+      background: url(../images/modal-border-sprite.png) -58px 0 repeat-y;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      width: 11px;
+    }
+  }
+
+  &__corner {
+    background: url(../images/modal-border-sprite.png) 0 0 no-repeat;
+    position: absolute;
+    z-index: 100;
+
+    &--top-left {
+      left: 0;
+      height: 15px;
+      top: 0;
+      width: 29px;
+    }
+
+    &--top-right {
+      background-position: -29px 0;
+      height: 14px;
+      right: 0;
+      top: 0;
+      width: 29px;
+    }
+
+    &--bottom-left {
+      background-position: 0 -14px;
+      bottom: 0;
+      height: 15px;
+      left: 0;
+      width: 26px;
+    }
+
+    &--bottom-right {
+      background-position: -32px -14px;
+      bottom: 0;
+      height: 15px;
+      right: 0;
+      width: 26px;
+    }
+  }
+
+  &__header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
+      url(../images/dark-wall.png);
+    padding: 15px;
+    border-bottom: 1px solid $modal-border-color;
+
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+      color: $secondary-text-color;
+      margin: 1rem 0 0.75rem;
+      width: 100%;
+      font-size: $font-large;
+    }
+  }
+
+  &__body {
+    background-image: url(../images/dark-leather.png);
+
+    label {
+      color: $red-color;
+    }
+  }
+
+  &__footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
+      url(../images/dark-wall.png);
+
+    border-top: 1px solid $modal-border-color;
+    padding: 12px 24px 24px 12px;
+  }
+}

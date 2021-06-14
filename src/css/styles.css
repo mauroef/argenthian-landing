@@ -313,3 +313,81 @@ p.description {
     letter-spacing: 0.2rem;
     color: #734a32;
     margin-top: 1.75rem; }
+
+.modal__border {
+  position: absolute;
+  z-index: 100; }
+  .modal__border--top {
+    background: url(../images/modal-border-frame-sprite.png) 0 0 repeat-x;
+    height: 8px;
+    left: 0;
+    right: 0;
+    top: 0; }
+  .modal__border--right {
+    background: url(../images/modal-border-sprite.png) -69px 0 repeat-y;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 11px; }
+  .modal__border--bottom {
+    background: url(../images/modal-border-frame-sprite.png) 0 -8px repeat-x;
+    bottom: 0;
+    height: 8px;
+    left: 0;
+    right: 0; }
+  .modal__border--left {
+    background: url(../images/modal-border-sprite.png) -58px 0 repeat-y;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 11px; }
+
+.modal__corner {
+  background: url(../images/modal-border-sprite.png) 0 0 no-repeat;
+  position: absolute;
+  z-index: 100; }
+  .modal__corner--top-left {
+    left: 0;
+    height: 15px;
+    top: 0;
+    width: 29px; }
+  .modal__corner--top-right {
+    background-position: -29px 0;
+    height: 14px;
+    right: 0;
+    top: 0;
+    width: 29px; }
+  .modal__corner--bottom-left {
+    background-position: 0 -14px;
+    bottom: 0;
+    height: 15px;
+    left: 0;
+    width: 26px; }
+  .modal__corner--bottom-right {
+    background-position: -32px -14px;
+    bottom: 0;
+    height: 15px;
+    right: 0;
+    width: 26px; }
+
+.modal__header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)), url(../images/dark-wall.png);
+  padding: 15px;
+  border-bottom: 1px solid #2c2a26; }
+  .modal__header h5 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ad835a;
+    margin: 1rem 0 0.75rem;
+    width: 100%;
+    font-size: 1.5em; }
+
+.modal__body {
+  background-image: url(../images/dark-leather.png); }
+  .modal__body label {
+    color: #752b1a; }
+
+.modal__footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)), url(../images/dark-wall.png);
+  border-top: 1px solid #2c2a26;
+  padding: 12px 24px 24px 12px; }
