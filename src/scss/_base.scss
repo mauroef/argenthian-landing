@@ -1,3 +1,19 @@
+// scroll bar
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: $modal-border-color;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $red-color;
+}
+
+// toast
+.toast {
+  z-index: $z-index-modal + 1;
+  //color: $black-color;
+}
+
 h2,
 h3 {
   text-align: center;

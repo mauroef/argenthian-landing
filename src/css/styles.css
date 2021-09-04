@@ -1,3 +1,13 @@
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #2c2a26; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #752b1a; }
+
+.toast {
+  z-index: 1062; }
+
 h2,
 h3 {
   text-align: center;

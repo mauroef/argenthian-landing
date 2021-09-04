@@ -1,16 +1,17 @@
-.modal-dialog
-  .modal-content
-    span.modal__border.modal__border--top
-    span.modal__border.modal__border--right
-    span.modal__border.modal__border--bottom
-    span.modal__border.modal__border--left
-    span.modal__corner.modal__corner--top-left
-    span.modal__corner.modal__corner--top-right
-    span.modal__corner.modal__corner--bottom-right
-    span.modal__corner.modal__corner--bottom-left
-    .modal-header.modal__header
-      h5.modal-title
-    .modal-body.modal__body 
-    .modal-footer.modal__footer
-      button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Cancel
-      button.btn.btn-primary(type='button') Acept
+#modal.modal(tabindex='-1')
+  .modal-dialog
+    .modal-content
+      span.modal__border.modal__border--top
+      span.modal__border.modal__border--right
+      span.modal__border.modal__border--bottom
+      span.modal__border.modal__border--left
+      span.modal__corner.modal__corner--top-left
+      span.modal__corner.modal__corner--top-right
+      span.modal__corner.modal__corner--bottom-right
+      span.modal__corner.modal__corner--bottom-left
+      .modal-header.modal__header
+        h5.modal-title
+      .modal-body.modal__body
+      .modal-footer.modal__footer
+        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Cancel
+        button#btn-submit.btn.btn-primary(type='button') Acept
