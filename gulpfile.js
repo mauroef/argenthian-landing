@@ -8,7 +8,7 @@ const scss = require('gulp-sass');
 const minify = require('gulp-minify');
 
 // change for production build
-const isProduction = false;
+const isProduction = true;
 
 var paths = {
   pug: {
