@@ -124,6 +124,9 @@ const Modal = {
   clean: function () {
     Helpers.getBySelector(this.body).innerHTML = '';
   },
+  hide: function () {
+    bootstrap.Modal.getInstance(Helpers.getById('modal')).hide();
+  },
 };
 
 const Validator = {
@@ -164,8 +167,14 @@ const Ajax = {
     };
 
     fetch(`${this.url.app}/signup`, params)
-      //.then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.signupOk !== 'undefined') {
+          this.handleResponse(data.message);
+          Modal.hide();
+        }
+      })
+      .catch((data) => Toast.show('Server connection failed.', data));
   },
   login: function (username, password) {
     const params = {
@@ -183,17 +192,20 @@ const Ajax = {
     fetch(`${this.url.app}/login`, params)
       .then((response) => response.json())
       .then((data) =>
-        data.auth
-          ? this.handleSuccess(data.token, data.redirect)
-          : this.handleError(data.message)
-      );
+        data.authOk
+          ? this.handleLogin(data.token, data.redirect)
+          : this.handleResponse(data.message)
+      )
+      .catch(() => Toast.show('Server connection error.'));
   },
-  handleSuccess: function (token, redirect) {
+  handleLogin: function (token, redirect) {
     if (token !== null && redirect !== null) {
       Helpers.redirectForm(token, redirect);
     }
   },
-  handleError: function () {},
+  handleResponse: function (message) {
+    Toast.show(message);
+  },
 };
 
 const Toast = {
